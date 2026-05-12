@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Us | Grand Luxe Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ivory: '#FFFFF0',
+              beige: '#F5F0E8',
+              charcoal: '#2C2C2C',
+              gold: '#C9A96E',
+            },
+            fontFamily: {
+              display: ['Playfair Display', 'serif'],
+              body: ['Lato', 'sans-serif'],
+            }
+          }
+        }
+      }
+      </script>
+  </head>
+  <body class="font-body bg-ivory text-charcoal">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+      <div class=max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="font-display text-2xl font-bold text-charcoal">Grand <span class="text-gold">Luxe</span></a>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+          <a href="/" class="hover:text-gold transition">Home</a>
+          <a href="/rooms/" class="hover:text-gold transition">Rooms</a>
+          <a href="/about/" class="text-gold">About</a>
+          <a href="#" class="hover:text-gold transition">Amenities</a>
+          <a href="#" class="text-gold transition">Contact</a>
+        </div>
+        <a href="#" class="bg-gold text-white px-6 py-2 text-sm uppercase tracking-wider hover:bg-yellow-700 transition">Book Now</a>
+      </div>
+    </nav>
+
+    <!--Hero-->
+    <section class="relative h-[60vh] flex items-center justify-center"
+    style="background-image: url('https://piscum.photos/id/164/1920/1080'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black/50"></div>
+<div class="relative text-center text-white">
+  <h2 class="font-display text-5xl md:text-6xl mb-4">Our Story</h2>
+  <p class="text-lg font-light">A legacy of luxury since 1998</p>
+</div>
+  </section>
+
+  <!--Story Section-->
+  <section class="py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="font-display text-4xl mb-8">Where Elegance Meets Warmth</h3>
+      <p class="text-gray-600 leading-relaxed mb-6">Founded in 1998, Grand Luxe Hotel was born from a simple vision: to create a sanctuary where world-class luxury meets genuine warmth. Nestled in the vibrant heart of the city,  our hotel has welcomed discerning travelers from around the globe for over two decades.</p>
+      <p class="text-gray-600 leading-relaxed mb-6">Every detail, from the hand-selected artwork adorning our halls to Egyptian cotton sheets on every bed, reflects our unwavering commitment to excellence. We believe luxury isn't just about opulence; it's about how you feel the moment you walk through our doors.</p>
+       <p class="text-gray-600 leading-relaxed mb-6">Our dedicated team of hospitality  professionals ensures that every stay is not just comfortable, but truly memorable. Because at Grand Luxe, you're never just a guest, you're family.</p>
+    </div>
+  </section>
+
+  <!--Values-->
+  <section class="py-20 px-6 bg-beige">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="font-display text-4xl text-center mb-12">Our Promise</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-3 bg-white rounded-lg shadow-sm">
+          <div class="text-gold text-3xl mb-4">&#9733;</div>
+          <h4 class="font-display text-xl mb-3">Excellence</h4>
+          <p class="text-gray-600 text-sm">Five-star service in every interaction, every detail, every moment of your stay.</p.
+          </div>
+        <div class="text-center p-8 bg-white rounded-lg shadow-sm">
+          <div class="text-gold text-3xl mb-4">&#10084;</div>
+          <h4 class="font-display text-xl mb-3">Warmth</h4>
+          <p class="text-gray-600 text-sm">Genuine care that makes you feel at home, no matter where home may be.</p>
+        </div>
+        <div class="text-center p-8 bg-white rounded-lg shadow-sm">
+          <div class="text-gold text-3xl mb-4">&#9830;</div>
+          <h4 class="font-display text-xl mb-3">Authenticity</h4>
+          <p class="text-gray-600 text-sm">Real experiences rooted in local culture and timeless hospitality traditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Awards-->
+  <section class="py-20 pc-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="font-display text-4xl mb-12">Awards & Recognition</h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="p-6 border border-gold/30 rounded-lg">
+          <p class="text-gold font-display text-2xl mb-2">2025</p>
+          <p class="text-gray-600 text-sm">World Luxury Hotel Awards - Best City Hotel</p>
+        </div>
+        <div class="p-6 border border-gold/30 rounded-lg">
+          <p class="text-gold font-display text-2xl mb-2">2024</p>
+          <p class="text-sm text-gray-600">TripAdvisor Traveler's Choice - Top 1%</p>
+        </div>
+        <div class="p-6 border border-gold/30 rounded-lg">
+          <p class="text-gold font-display text-2xl mb-2">2023</p>
+          <p class="text-sm text-gray-600">Forbes Travel Guide - Five-Star Award</p>
+        </div>
+        <div class="p-6 border border-gold/30 rounded-lg">
+          <p class="text-gold font-display text-2xl mb-2">2022</p>
+          <p class="text-sm text-gray-600">Condé Nast - Best Hotel Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+<footer class="bg-charcoal text-white py-12 px-6 text-center">
+  <h4 class="font-display text-xl mb-2">Grand<span class="text-gold">Luxe</span><h4>
+  <p class="text-gray-400 text-sm">&copy; 2026 Grand Luxe Hotel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
