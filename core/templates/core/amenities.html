@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Us | Grand Luxe Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ivory: '#FFFFF0',
+              beige: '#F5F0E8',
+              charcoal: '#2C2C2C',
+              gold: '#C9A96E',
+            },
+            fontFamily: {
+              display: ['Playfair Display', 'serif'],
+              body: ['Lato', 'sans-serif'],
+            }
+          }
+        }
+      }
+      </script>
+  </head>
+  <body class="font-body bg-ivory text-charcoal">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="font-display text-2xl font-bold text-charcoal">Grand <span class="text-gold">Luxe</span></a>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+          <a href="/" class="hover:text-gold transition">Home</a>
+          <a href="/rooms/" class="hover:text-gold transition">Rooms</a>
+
+          <a href="/about/" class="text-gold">About</a>
+          <a href="/amenities/" class="hover:text-gold transition">Amenities</a>
+          <a href="#" class="hover:text-gold transition">Contact</a>
+        </div>
+        <a href="#" class="bg-gold text-white px-6 py-2 text-sm uppercase tracking-wider hover:bg-yellow-700 transition">Book Now</a>
+      </div>
+    </nav>
+
+    <!--Hero-->
+    <section class="relative h-[60vh] flex items-center justify-center"
+    style="background-mage: url('https://piscum.photos/id/335/1920/1080'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black/50"></div>
+<div class="relative text-center text-white">
+  <h2 class="font-display text-5xl mb-4">Hotel Amenities</h2>
+  <p class="text-lg font-light">Everything you need for an extraordinary stay</p>
+</div>
+</section>
+
+<!--Amenities Grid-->
+<section class="py-20 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h3 class="font-display text-4xl mb-4">World-Class Facilities</h3>
+      <p class="text-gray-600 max-w-2xl mx-auto">From relaxation to recreation, Grand Luxe offers an exceptional range of amenities designed to elevate your moment of stay.</p>
+    </div>
+    
+    <!--Spa-->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+      <div class="overflow-hidden rounded-lg">
+        <img src="https://piscum.photos/id/325/800/600" class="w-full h-96 object-cover hover:scale-105 transition duration-500">
+      </div>
+      <div class="p-4">
+        <h4 class="font-display text-2xl mb-3">The Grand Spa</h4>
+        <p class="text-gray-600 mb-4">Surrender to serenity in our full-service spa. Enjoy rejuvenating massages, facials, and bodybtreatments performed by expert therapists using premium products. Our tranquil oasis is designed to melt away stress and leave you feeling refreshed and renewed.</p>
+      <ul class="text-sm text-gray-600 space-y-2">
+        <li&#10003; Sweedish, deep tissue, and hot stone massages</li>
+      <li&#10003; Sauna & steam rooms</li>
+      <li&#10003; Couples treatment suites</li>
+      <li&#10003; Open daily: 7:00 AM - 10:00 PM</li>
+      </ul>
+      </div>
+    </div>
+
+<!--Pool-->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+      <div class="order-2 md:order-1 p-4">
+        <h4 class="font-display text-2xl mb-3">Rooftop Infinity Pool</h4>
+        <p class="text-gray-600 mb_4">Take a dip high above the city in our stunning rooftop infinty pool. Enjoy paranomic skyline views while our poolside attendants serve refreshing cocktails and light bites. Whether you're lounging on a sunbed or swimming under the stars, our rooftop pool offers the perfect blend of relaxation and luxury.</p>
+      <ul class="text-sm text-gray-600 space-y-2">
+        <li&#10003; Heated pool year-round</li>
+        <li&#10003; Private cabanas available</li>
+        <li&#10003; Poolside bar and dinning</li>
+        <li&#10003; open daily: 6:00 AM - 9:00 PM</li>
+      </ul>
+      </div>
+      <div class="order-1 md:order-2 overflow-hidden rounded-lg">
+        <img src="https://piscum.photos/id/180/800/600" class="w-full h-96 object-cover hover:scale-105 transition duration-500">
+      </div>
+    </div>
+
+    <!--Restaurant-->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+      <div class="overflow-hidden rounded-lg">
+        <img src="https://piscum.photos/id/225/800/600" class="w-full h-96 object-cover hover:scale-105 transition duration-500">
+      </div>
+      <div class="p-4">
+        <h4 class="font-display text-2xl mb-3">Restaurant & Bar</h4>
+        <p class="text-gray-600 mb-4">Savour exquisite cuisine at our award-winning restaurant, where our executive chef crafts seasonal menus using locally sourced ingredients. Unwindnat our elegant bar with handcrafted cocktails and fine wines.</p>
+      <ul class="text-sm text-gray-600 space-y-2">
+        <li&#10003; Breakfast, lunch, dinner</li>
+        <li&#10003; Private dinning available</li>
+        <li&#10003; Signature cocktail bar</li>
+        <li&#10003; Room service 24/7</li>
+      </ul>
+      </div>
+    </div>
+
+    <!--Gym-->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+      <div class="order-2 md:order-1 p-4">
+        <h4 class="font-display text-2xl mb-3">State-of-the-Art Fitness Center</h4>
+        <p class="text-gray-600 mb_4">Stay active during your stay in our fully equipped fitness center. Featuring the latest cardio machines, free weights, and strength training equipment, our gym is designed to meet the needs of every fitness level. Personal training sessions and group classes are also available to help you achieve your wellness goals.</p>
+      <ul class="text-sm text-gray-600 space-y-2">
+        <li&#10003; 24/7 access for hotel guests</li>
+        <li&#10003; Personal training available</li>
+        <li&#10003; Group fitness classes</li>
+        <li&#10003; Complimentary towels and water</li>
+        <li&#1003; Tecnogym equipment</li>
+      </ul>
+      </div>
+      <div class="order-1 md:order-2 overflow-hidden rounded-lg">
+        <img src="https://piscum.photos/id/290/800/600" class="w-full h-96 object-cover hover:scale-105 transition duration-500">
+      </div>
+</div>
+</div>
+</section>
+
+<!--Additional Amenities-->
+<section class="py-20 px-6 bg-beige">
+  <div class="max-w-7xl mx-auto">
+    <h3 class="font-display text-4xl text-center mb-12">Additional Amenities</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+        <div class="text-gold text-3xl mb-4">&#128663;</div>
+        <h4 class="font-display text-xl mb-3">Valet Parking</h4>
+        <p class="text-gray-600 text-sm">Convenient and secure parking with 24/7 valet service.</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+        <div class="text-gold text-3xl mb-4">&#128241;</div>
+        <h4 class="font-display text-xl mb-3">Business Center</h4>
+        <p class="text-gray-600 text-sm">Fully equipped business center with printing, faxing, and meeting rooms.</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+        <div class="text-gold text-3xl mb-4">&#128640;</div>
+        <h4 class="font-display text-xl mb-3">Concierge Services</h4>
+        <p class="text-gray-600 text-sm">Personalized assistance with reservations, transportation, and local recommendations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer-->
+<footer class="bg-charcoal text-white py-12 px-6 text-center">
+  <h4 class="font-display text-xl mb-2">Grand<span class="text-gold">Luxe</span></h4>
+  <p class="text-gray-400 text-sm">&copy; 2026 Grand Luxe Hotel. All rights reserved.</p>
+  </footer>

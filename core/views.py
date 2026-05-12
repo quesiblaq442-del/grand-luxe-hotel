@@ -8,3 +8,6 @@ def rooms(request):
   return render(request,'core/rooms.html')
 def about(request):
   return render(request,'core/about.html')
+
+def amenities(request):
+  return render(request, 'core/amenities.html')

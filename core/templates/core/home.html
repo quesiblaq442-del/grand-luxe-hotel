@@ -1,208 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grand Luxe Hotel|Luxury stays in the heart of the city</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              ivory: '#FFFFF0',
-              beige: '#F5F0E8',
-              charcoal: '#2C2C2C',
-              gold: '#C9A96E',
+              ivory: "#FFFFF0",
+              beige: "#F5F0E8",
+              charcoal: "#2C2C2C",
+              gold: "#C9A96E",
             },
             fontFamily: {
-              display: ['Playfair Display', 'serif'],
-              body: ['Lato', 'sans-serif'],
-            }
-          }
-        }
-      }
+              display: ["Playfair Display", "serif"],
+              body: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
   </head>
   <body class="font-body bg-ivory text-charcoal">
-
     <!-- Navigation -->
-<nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="font-display text-2xl font-bold text-charcoal">Grand <span class="text-gold">Luxe</span></h1>
-    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
-      <a href="/rooms/" class="hover:text-gold transition">Rooms</a>
-      <a href="/dinning/" class="hover:text-gold transition">Dinning</a>
-      <a href="/about/" class="hover:text-gold transition">About</a>
-      <a href="/gallery/" class="hover:text-gold transition">Gallery</a>
-      <a href="/contact/" class="hover:text-gold transition">Contact</a>
-    </div>
-    <a href="#booking" class="bg-gold text-white px-6 py-2 text-sm uppercase tracking-wider hover:bg-yellow-700 transition">Book Now</a>
-  </div>
-</nav>
-
-<!--Hero Section-->
-<section class="relative h-screen flex items-center justify-center"
-style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?=1920'); background-size: cover; background-position: center;">
-<div class="absolute inset-0 bg-black/40"></div>
-<div class="relative text-center text-white px-6">
-  <h2 class="font-display text-5xl md:text-7xl mb-4">Luxury Stays in the<br>Heart of the City</h2>
-  <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">Experience unparalleled elegance and world-class hospitality at Grand Luxe Hotel</p>
-  <a href="#booking" class="inline-block bg-gold text-white px-10 py-4 text-sm uppercase tracking-widget hover:bg-yellow-700 transition">Reserve Your Stay</a>
-</div>
-</section>
-
-<!--Booking Widget-->
-<section id="booking" class="bg-charcoal py-8">
-  <div class="max-w-6xl mx-auo px-6">
-    <form class="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
-      <div>
-        <label class="text-gold text-xs uppercase tracking-wider">Check-in</label>
-        <input type="date" class="w-full mt-1 p-3 bg-white/10 border border-gold/30 text-white rounded">
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="font-display text-2xl font-bold text-charcoal">
+          Grand <span class="text-gold">Luxe</span>
+        </h1>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+          <a href="/rooms/" class="hover:text-gold transition">Rooms</a>
+          <a href="/dinning/" class="hover:text-gold transition">Dinning</a>
+          <a href="/about/" class="hover:text-gold transition">About</a>
+          <a href="/gallery/" class="hover:text-gold transition">Gallery</a>
+          <a href="/contact/" class="hover:text-gold transition">Contact</a>
+          <a href="/amenities/" class="hover:text-gold transition">Amenities</a>
+        </div>
+        <a
+          href="#booking"
+          class="bg-gold text-white px-6 py-2 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+          >Book Now</a
+        >
       </div>
-      <div>
-        <label class="text-gold text-xs uppercase tracking-wider">Check-out</label>
-        <input type="date" class="w-full mt-1 p-3 bg-white/10 border border-gold/30 text-white rounded">
+    </nav>
+
+    <!--Hero Section-->
+    <section
+      class="relative h-screen flex items-center justify-center"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1566073771259-6a8506099945?=1920&quot;);
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="relative text-center text-white px-6">
+        <h2 class="font-display text-5xl md:text-7xl mb-4">
+          Luxury Stays in the<br />Heart of the City
+        </h2>
+        <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">
+          Experience unparalleled elegance and world-class hospitality at Grand
+          Luxe Hotel
+        </p>
+        <a
+          href="#booking"
+          class="inline-block bg-gold text-white px-10 py-4 text-sm uppercase tracking-widget hover:bg-yellow-700 transition"
+          >Reserve Your Stay</a
+        >
       </div>
-     <div>
-      <label class="text-gold text-xs uppercase tracking-wider">Guests</label>
-      <select class="w-full mt-1 p-3 bg-white/10 border border-gold/30 text-white rounded">
-        <option>1 Guests</option>
-        <option>2 Guests</option>
-        <option>3 Guests</option>
-      </select>
-    </div>
-    <div>
-      <label class="text-gold text-xs uppercase tracking-wider">Room Type</label>
-      <select class="w-full mt-1 p-3 bg-white/10 border border-gold/30 text-white rounded">
-        <option>Deluxe Room</option>
-        <option>Executive Room</option>
-        <option>Presidential Suite</option>
-      </select>
-    </div>
-    <button class="bg-gold text-white p-3 uppercase tracking-wider hover:bg-yellow-700 transition rounded">Check Availability</button>
-  </form>
-</div>
-  </section>
+    </section>
 
-  <!--Featured Rooms-->
-  <section class="py-20 px-6">
-    <div class="max-w-7xl mx-auto text-center">
-      <h3 class="font-display text-4xl mb-4">Our Finest Rooms</h3>
-<p class="text-gray-600 mb-12 max-w-xl mx-auto">Every room is a sanctuary of comfort, designed with meticulous attention to detail</p>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-  <div class="group cursor-pointer">
-    <div class="overflow-hidden rounded-lg">
-      <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-    </div>
-    <h4 class="font-display text-xl mt-4">Deluxe Room</h4>
-    <p class="text-gold mt-1">From $250/night</p>
-  </div>
-  <div class="group cursor-pointer">
-    <div class="overflow-hidden rounded-lg">
-      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-    </div>
-    <h4 class="font-display text-xl mt-4">Executive Suite</h4>
-    <p class="text-gold mt-1">From $400/night</p>
-  </div>
-  <div class="group cursor-pointer">
-    <div class="overflow-hidden rounded-lg">
-      <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-    </div>
-    <h4 class="font-display text-xl mt-4">Presidential Suite</h4>
-    <p class="text-gold mt-1">From $800/night</p>
-  </div>
-</div>
-</div>
-</section>
-
-<!--Why Stay With Us-->
-<section class="py-20 px-6 bg-beige">
-  <div class="max-w-7xl mx-auto text-center">
-    <h3 class="font-display text-4xl mb-12">Why Stay With Us</h3>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-      <div class="p-6">
-        <div class="text-gold text-4xl mb-4">&#9827;</div>
-        <h4 class="font-display text-xl mb-2">Luxury Spa<h4>
-          <p class="text-gray-600 text-sm">Rejuvenate with world-class treatments</p>
-    </div>
-    <div class="p-6">
-<div class="text-gold text-4xl mb-4">&#9733;</div>
-<h4 class="font-display text-lg mb-2">Rooftop Pool</h4>
-<p class="text-gray-600 text-sm">Swim above the city skyline</p>
-    </div>
-    <div class="p-6">
-      <div class="text-gold text-4xl mb-4">&#9830;</div>
-      <h4 class="font-display text-lg mb-2">Fine Dinning</h4>
-      <p class="text-gray-600 text-sm">Award-winning culinary experiences</p>
-    </div>
-    <div class="p-6">
-      <div class="text-gold text-4xl mb-4">&#9824;</div>
-      <h4 class="font-display text-lg mb-2">Prime Location</h4>
-      <p class="text-gray-600 text-sm">Steps from the city's best attractions</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!--Guest Reviews-->
-<section class="py-20 px-6">
-  <div class="max-w-5xl mx-auto text-center">
-    <h3 class="font-display text-4xl mb-12">Our Guests Say</h3>
-    <div class="grid grid cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-        <p class="italic text-gray-600 mb-4">"An absolutely stunning hotel. The service was impeccable and the room took my breath away."</p>
-        <p class="font-bold">- Sarah M.</p>
-        <p class="text-gold text-sm">⭐⭐⭐⭐⭐</p>
+    <!--Booking Widget-->
+    <section id="booking" class="bg-charcoal py-8">
+      <div class="max-w-6xl mx-auo px-6">
+        <form class="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+          <div>
+            <label class="text-gold text-xs uppercase tracking-wider"
+              >Check-in</label
+            >
+            <input
+              type="date"
+              class="w-full mt-1 p-3 bg-white/10 border border-gold/30 text-white rounded"
+            />
+          </div>
+          <div>
+            <label class="text-gold text-xs uppercase tracking-wider"
+              >Check-out</label
+            >
+            <input
+              type="date"
+              class="w-full mt-1 p-3 bg-white/10 border border-gold/30 text-white rounded"
+            />
+          </div>
+          <div>
+            <label class="text-gold text-xs uppercase tracking-wider"
+              >Guests</label
+            >
+            <select
+              class="w-full mt-1 p-3 bg-white/10 border border-gold/30 text-white rounded"
+            >
+              <option>1 Guests</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-gold text-xs uppercase tracking-wider"
+              >Room Type</label
+            >
+            <select
+              class="w-full mt-1 p-3 bg-white/10 border border-gold/30 text-white rounded"
+            >
+              <option>Deluxe Room</option>
+              <option>Executive Room</option>
+              <option>Presidential Suite</option>
+            </select>
+          </div>
+          <button
+            class="bg-gold text-white p-3 uppercase tracking-wider hover:bg-yellow-700 transition rounded"
+          >
+            Check Availability
+          </button>
+        </form>
       </div>
-      <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-        <p class="italic text-gray-600 mb-4">"The rooftop pool was a highlight of our stay. The views were incredible and the atmosphere was so relaxing."</p>
-        <p class="font-bold">- James L.</p>
-        <p class="text-gold text-sm">⭐⭐⭐⭐⭐</p>
+    </section>
+
+    <!--Featured Rooms-->
+    <section class="py-20 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <h3 class="font-display text-4xl mb-4">Our Finest Rooms</h3>
+        <p class="text-gray-600 mb-12 max-w-xl mx-auto">
+          Every room is a sanctuary of comfort, designed with meticulous
+          attention to detail
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="group cursor-pointer">
+            <div class="overflow-hidden rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600"
+                class="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h4 class="font-display text-xl mt-4">Deluxe Room</h4>
+            <p class="text-gold mt-1">From $250/night</p>
+          </div>
+          <div class="group cursor-pointer">
+            <div class="overflow-hidden rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600"
+                class="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h4 class="font-display text-xl mt-4">Executive Suite</h4>
+            <p class="text-gold mt-1">From $400/night</p>
+          </div>
+          <div class="group cursor-pointer">
+            <div class="overflow-hidden rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600"
+                class="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <h4 class="font-display text-xl mt-4">Presidential Suite</h4>
+            <p class="text-gold mt-1">From $800/night</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!--Footer-->
-<footer class="bg-charcoal text-white py-8">
-  <div class="max-w-7xl mx-auto grid grid-ols-1 md:grid-cols-4 gap-8">
-    <div>
-      <h4 class="font-display text-xl mb-4">Grand<span class="text-gold">Luxe</span></h4>
-      <p class="text-gray-400 text-sm">Luxury stays in the of the city. Where elegance meets comfort.</p>
-    </div>
-    <div>
-      <h5 class="text-gold uppercase text-sm tracking-wider mb-4">Quick Links</h5>
-      <ul class="space-y-2 text-gray-400 text-sm">
-        <li><a href="#" class="hover:text-white transition">Rooms and Suites</a></li>
-        <li><a href="#" class="hover:text-white transition">Dinning</a></li>
-        <li><a href="#" class="hover:text-white transition">Amenities</a></li>
-         <li><a href="#" class="hover:text-white transition">Offers</a></li>
-      </ul>
-    </div>
-    <div>
-      <h5 class="text-gold uppercase text[sm tracking-wider mb-4">Contact</h5>
-      <ul class="space-y-2 text-gray-400 text-sm">
-        <li>+233 (546) 734 472</li>
-        <li>info@grandluxe.com</li>
-        <li>123 Luxury Avenue</li>
-        <li>Accra, Ghana</li>
-      </ul>
-    </div>
-    <div>
-      <h5 class="text-gold uppercase text-sm tracking-wider mb-4">Newsletter</h5>
-      <p class="text-gray-400 text-sm mb-4">Subscribe to receive exclusive offers and updates.</p>
-      <form class="flex">
-        <input type="email" placeholder="Your email" class="p-2 bg-white/10 border border-gold/30 text-white text-sm rounded-l flex-1">
-        <button class="bg-gold text-white px-4 text-sm rounded-r hover:bg-yellow-700 transition">Join</button>
-      </form>
-    </div>
-  </div>
-  <div class="max-w-7xl mx-auto mt-12 pt-8 borber-t border-gray-700 text-center text-gray-500 text-sm">
-    &copy; 2026 Grand Luxe Hotel. All rights reserved.|Privacy Policy|Terms of Service
-  </div>
-</footer>
+    <!--Why Stay With Us-->
+    <section class="py-20 px-6 bg-beige">
+      <div class="max-w-7xl mx-auto text-center">
+        <h3 class="font-display text-4xl mb-12">Why Stay With Us</h3>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="p-6">
+            <div class="text-gold text-4xl mb-4">&#9827;</div>
+            <h4 class="font-display text-xl mb-2">Luxury Spa</h4>
+            <p class="text-gray-600 text-sm">
+              Rejuvenate with world-class treatments
+            </p>
+          </div>
+          <div class="p-6">
+            <div class="text-gold text-4xl mb-4">&#9733;</div>
+            <h4 class="font-display text-lg mb-2">Rooftop Pool</h4>
+            <p class="text-gray-600 text-sm">Swim above the city skyline</p>
+          </div>
+          <div class="p-6">
+            <div class="text-gold text-4xl mb-4">&#9830;</div>
+            <h4 class="font-display text-lg mb-2">Fine Dinning</h4>
+            <p class="text-gray-600 text-sm">
+              Award-winning culinary experiences
+            </p>
+          </div>
+          <div class="p-6">
+            <div class="text-gold text-4xl mb-4">&#9824;</div>
+            <h4 class="font-display text-lg mb-2">Prime Location</h4>
+            <p class="text-gray-600 text-sm">
+              Steps from the city's best attractions
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!--Guest Reviews-->
+    <section class="py-20 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h3 class="font-display text-4xl mb-12">Our Guests Say</h3>
+        <div class="grid grid cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+            <p class="italic text-gray-600 mb-4">
+              "An absolutely stunning hotel. The service was impeccable and the
+              room took my breath away."
+            </p>
+            <p class="font-bold">- Sarah M.</p>
+            <p class="text-gold text-sm">⭐⭐⭐⭐⭐</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+            <p class="italic text-gray-600 mb-4">
+              "The rooftop pool was a highlight of our stay. The views were
+              incredible and the atmosphere was so relaxing."
+            </p>
+            <p class="font-bold">- James L.</p>
+            <p class="text-gold text-sm">⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-charcoal text-white py-8">
+      <div class="max-w-7xl mx-auto grid grid-ols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="font-display text-xl mb-4">
+            Grand<span class="text-gold">Luxe</span>
+          </h4>
+          <p class="text-gray-400 text-sm">
+            Luxury stays in the of the city. Where elegance meets comfort.
+          </p>
+        </div>
+        <div>
+          <h5 class="text-gold uppercase text-sm tracking-wider mb-4">
+            Quick Links
+          </h5>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>
+              <a href="#" class="hover:text-white transition"
+                >Rooms and Suites</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-white transition">Dinning</a></li>
+            <li>
+              <a href="#" class="hover:text-white transition">Amenities</a>
+            </li>
+            <li><a href="#" class="hover:text-white transition">Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-gold uppercase text[sm tracking-wider mb-4">
+            Contact
+          </h5>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>+233 (546) 734 472</li>
+            <li>info@grandluxe.com</li>
+            <li>123 Luxury Avenue</li>
+            <li>Accra, Ghana</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-gold uppercase text-sm tracking-wider mb-4">
+            Newsletter
+          </h5>
+          <p class="text-gray-400 text-sm mb-4">
+            Subscribe to receive exclusive offers and updates.
+          </p>
+          <form class="flex">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="p-2 bg-white/10 border border-gold/30 text-white text-sm rounded-l flex-1"
+            />
+            <button
+              class="bg-gold text-white px-4 text-sm rounded-r hover:bg-yellow-700 transition"
+            >
+              Join
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto mt-12 pt-8 borber-t border-gray-700 text-center text-gray-500 text-sm"
+      >
+        &copy; 2026 Grand Luxe Hotel. All rights reserved.|Privacy Policy|Terms
+        of Service
+      </div>
+    </footer>
+  </body>
 </html>
