@@ -14,3 +14,6 @@ def amenities(request):
 
 def contact(request):
   return render(request, 'core/contact.html')
+
+def dinning(request):
+  return render(request,'core/dinning.html')  
