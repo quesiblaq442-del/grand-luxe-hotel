@@ -17,3 +17,6 @@ def contact(request):
 
 def dinning(request):
   return render(request,'core/dinning.html')  
+
+def gallery(request):
+  return render(request,'core/gallery.html')

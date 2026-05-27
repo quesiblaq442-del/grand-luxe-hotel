@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Grand Luxe Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ivory: "#FFFFF0",
+              beige: "#F5F0E8",
+              charcoal: "#2C2C2C",
+              gold: "#C9A96E",
+            },
+            fontFamily: {
+              display: ["Playfair Display", "serif"],
+              body: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-body bg-ivory text-charcoal">
+    <!--Navigation-->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+      <div class="max--7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="font-display text-2xl font-bold text-charcoal"
+          >Grand<span class="text-gold">Luxe</span></a
+        >
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+          <a href="/" class="hover:text-gold transition">Home</a>
+          <a href="/rooms/" clsss="hover:text-gold transition">Rooms</a>
+          <a href="/dinning/" class="hover:text-gold transition">Dinning</a>
+          <a href="/amenities/" class="hover:text-gold transition">Amenities</a>
+          <a href="/contact/" class="hover:text-gold transition">Contact</a>
+        </div>
+        <a
+          href="#"
+          class="bg-gold text-white px-6 py-2 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+          >Bbok Now</a
+        >
+      </div>
+    </nav>
+
+    <!--Hero-->
+    <section class="pt-32 pb-16 px-6 text-center">
+      <h2 class="font-display text-5xl mb-4">Gallery</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        A visual journey through Grand Luxe Hotel - explore our rooms, dinning,
+        amenities, and surroundings.
+      </p>
+    </section>
+
+    <!--Gallery Grid-->
+    <section class="pb-20 px-6">
+      <div class="max-w-7xl mx-auto">
+        <!--Rooms-->
+        <h3 class="font-display text-2xl mb-6 text-gold">Rooms & Suites</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/164/600/400"
+              class="w-full h-64 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/27/600/400"
+              class="w-full h-64 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/180/600/400"
+              class="w-full h-64 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+        <!--Lobby & Interiors-->
+        <h3 class="font-display text-2xl mb-6 text-gold">Lobby & Interiors</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/260/800/500"
+              class="w-full h-72 object-cover hover:cscale-105 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/249/800/500"
+              class="w-full h-72 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+
+        <!--Dinning-->
+        <h3 class="font-display text-2xl mb-6 text-gold">Dinning</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/292/600/400"
+              class="w-full h-64 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/312/600/400"
+              class="w-full h-64 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/431/600/400"
+              class="w-full h-64 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+
+        <!--Events-->
+        <h3 class="font-display text-2xl mb-6 text-gold">
+          Events & Celebrations
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/84/800/500"
+              class="w-full h-72 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/122/800/500"
+              class="w-full h-72 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+
+        <!--Local Attractions-->
+        <h3 class="font-display text-2xl mb-6 text-gold">Local Attractions</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/274/600/400"
+              class="w-full h-64 object-cover hover:scale-500 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/365/600/400"
+              class="w-full h-64 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://piscum.photos.id/399/600/400"
+              class="w-full h-64 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CTA-->
+    <section class="py-16 px-6 bg-charcoal text-center">
+      <h3 class="font-display text-3xl text-white mb-4">
+        Ready to Experience Grand Luxe?
+      </h3>
+      <p class="text-gray-400 mb-8">
+        Book your stay and create memories that last a lifetime.
+      </p>
+      <a
+        href="/contact/"
+        class="inline-block bg-gold text-white px-10 py-4 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+        >Book Your Stay</a
+      >
+    </section>
+
+    <!--Footer-->
+    <footer
+      class="bg-charcoal text-white py-12 px-6 text-center border-t border-gray-700"
+    >
+      <h4 class="font-display text-xl mb-2">
+        Grand Luxe Hotel. All rights resered.
+      </h4>
+    </footer>
+  </body>
+</html>
