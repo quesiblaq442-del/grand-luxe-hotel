@@ -20,3 +20,6 @@ def dinning(request):
 
 def gallery(request):
   return render(request,'core/gallery.html')
+
+def offers(request):
+  return render(request,'core/offers.html')

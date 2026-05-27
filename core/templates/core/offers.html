@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offers & Packages | Grand Luxe Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ivory: "#FFFFF0",
+              beige: "#F5F0E8",
+              charcoal: "#2C2C2C",
+              gold: "#C9A96E",
+            },
+            fontFamily: {
+              display: ["Playfair Display", "serif"],
+              body: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-body bg-ivory text-charcoal">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="/" class="font-display text-2xl font-bold text-charcoal"
+          >Grand <span class="text-gold">Luxe</span></a
+        >
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+          <a href="/" class="hover:text-gold transition">Home</a>
+          <a href="/rooms/" class="hover:text-gold transition">Rooms</a>
+          <a href="/dining/" class="hover:text-gold transition">Dining</a>
+          <a href="/amenities/" class="hover:text-gold transition">Amenities</a>
+          <a href="/contact/" class="hover:text-gold transition">Contact</a>
+          <a href="/gallery/" class="hover:text-gold transition">Gallery</a>
+        </div>
+        <a
+          href="#"
+          class="bg-gold text-white px-6 py-2 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+          >Book Now</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 px-6 text-center">
+      <h2 class="font-display text-5xl mb-4">Special Offers & Packages</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Exclusive deals crafted to make your stay even more unforgettable. Book
+        directly for the best rates guaranteed.
+      </p>
+    </section>
+
+    <!-- Offers -->
+    <section class="pb-20 px-6">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <!-- Honeymoon Package -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-lg shadow-sm overflow-hidden"
+        >
+          <div class="overflow-hidden">
+            <img
+              src="https://picsum.photos/id/122/800/500"
+              class="w-full h-80 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="p-8">
+            <span class="text-gold text-xs uppercase tracking-wider font-bold"
+              >Romance</span
+            >
+            <h3 class="font-display text-3xl mt-2 mb-4">Honeymoon Escape</h3>
+            <p class="text-gray-600 mb-4">
+              Celebrate your love with a romantic getaway. Enjoy champagne on
+              arrival, couples spa treatment, candlelit dinner, and a room
+              adorned with rose petals.
+            </p>
+            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li>&#10003; 3 nights in Executive Suite</li>
+              <li>&#10003; Couples spa massage</li>
+              <li>&#10003; Private candlelit dinner</li>
+              <li>&#10003; Champagne & chocolates on arrival</li>
+              <li>&#10003; Late checkout</li>
+            </ul>
+            <p class="text-gold font-display text-2xl mb-4">From $1,499</p>
+            <a
+              href="/contact/"
+              class="inline-block bg-gold text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+              >Book Package</a
+            >
+          </div>
+        </div>
+
+        <!-- Weekend Escape -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-lg shadow-sm overflow-hidden"
+        >
+          <div class="order-2 md:order-1 p-8">
+            <span class="text-gold text-xs uppercase tracking-wider font-bold"
+              >Leisure</span
+            >
+            <h3 class="font-display text-3xl mt-2 mb-4">Weekend Escape</h3>
+            <p class="text-gray-600 mb-4">
+              Recharge with a luxurious weekend away. Unwind by the pool, enjoy
+              brunch, and explore the city at your own pace.
+            </p>
+            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li>&#10003; 2 nights in Deluxe Room</li>
+              <li>&#10003; Daily breakfast buffet</li>
+              <li>&#10003; One spa treatment per guest</li>
+              <li>&#10003; Pool & gym access</li>
+              <li>&#10003; 20% off dining</li>
+            </ul>
+            <p class="text-gold font-display text-2xl mb-4">From $699</p>
+            <a
+              href="/contact/"
+              class="inline-block bg-gold text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+              >Book Package</a
+            >
+          </div>
+          <div class="order-1 md:order-2 overflow-hidden">
+            <img
+              src="https://picsum.photos/id/180/800/500"
+              class="w-full h-80 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+
+        <!-- Business Stay -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-lg shadow-sm overflow-hidden"
+        >
+          <div class="overflow-hidden">
+            <img
+              src="https://picsum.photos/id/260/800/500"
+              class="w-full h-80 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="p-8">
+            <span class="text-gold text-xs uppercase tracking-wider font-bold"
+              >Business</span
+            >
+            <h3 class="font-display text-3xl mt-2 mb-4">Business Stay Deal</h3>
+            <p class="text-gray-600 mb-4">
+              Make your business trip productive and comfortable. Enjoy premium
+              workspace, fast Wi-Fi, and executive lounge access.
+            </p>
+            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li>&#10003; Deluxe Room with work desk</li>
+              <li>&#10003; Executive lounge access</li>
+              <li>&#10003; High-speed Wi-Fi</li>
+              <li>&#10003; Daily pressing of one suit</li>
+              <li>&#10003; Airport shuttle included</li>
+            </ul>
+            <p class="text-gold font-display text-2xl mb-4">
+              From $349 / night
+            </p>
+            <a
+              href="/contact/"
+              class="inline-block bg-gold text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+              >Book Package</a
+            >
+          </div>
+        </div>
+
+        <!-- Seasonal Offer -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-lg shadow-sm overflow-hidden"
+        >
+          <div class="order-2 md:order-1 p-8">
+            <span class="text-gold text-xs uppercase tracking-wider font-bold"
+              >Seasonal</span
+            >
+            <h3 class="font-display text-3xl mt-2 mb-4">Summer Bliss</h3>
+            <p class="text-gray-600 mb-4">
+              Embrace the summer with sun-soaked days by our rooftop pool,
+              refreshing cocktails, and exclusive seasonal dining experiences.
+            </p>
+            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li>&#10003; 4 nights in any room category</li>
+              <li>&#10003; Daily poolside cocktails</li>
+              <li>&#10003; Summer BBQ dinner experience</li>
+              <li>
+                &#10003; Complimentary room upgrade (subject to availability)
+              </li>
+              <li>&#10003; Kids stay free</li>
+            </ul>
+            <p class="text-gold font-display text-2xl mb-4">From $1,199</p>
+            <a
+              href="/contact/"
+              class="inline-block bg-gold text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+              >Book Package</a
+            >
+          </div>
+          <div class="order-1 md:order-2 overflow-hidden">
+            <img
+              src="https://picsum.photos/id/325/800/500"
+              class="w-full h-80 object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Rate Guarantee -->
+    <section class="py-16 px-6 bg-beige text-center">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="font-display text-3xl mb-4">Best Rate Guarantee</h3>
+        <p class="text-gray-600">
+          Book directly with us and enjoy the lowest rates available anywhere.
+          If you find a lower price elsewhere, we'll match it and give you an
+          additional 10% off.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12 px-6 text-center">
+      <h4 class="font-display text-xl mb-2">
+        Grand <span class="text-gold">Luxe</span>
+      </h4>
+      <p class="text-gray-400 text-sm">
+        &copy; 2026 Grand Luxe Hotel. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
