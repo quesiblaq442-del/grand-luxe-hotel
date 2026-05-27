@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dining | Grand Luxe Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ivory: "#FFFFF0",
+              beige: "#F5F0E8",
+              charcoal: "#2C2C2C",
+              gold: "#C9A96E",
+            },
+            fontFamily: {
+              display: ["Playfair Display", "serif"],
+              body: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-body bg-ivory text-charcoal">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="/" class="font-display text-2xl font-bold text-charcoal"
+          >Grand <span class="text-gold">Luxe</span></a
+        >
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+          <a href="/" class="hover:text-gold transition">Home</a>
+          <a href="/rooms/" class="hover:text-gold transition">Rooms</a>
+          <a href="/dining/" class="text-gold">Dining</a>
+          <a href="/amenities/" class="hover:text-gold transition">Amenities</a>
+          <a href="/contact/" class="hover:text-gold transition">Contact</a>
+        </div>
+        <a
+          href="#"
+          class="bg-gold text-white px-6 py-2 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+          >Book Now</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="relative h-[60vh] flex items-center justify-center"
+      style="
+        background-image: url(&quot;https://picsum.photos/id/312/1920/1080&quot;);
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative text-center text-white">
+        <h2 class="font-display text-5xl md:text-6xl mb-4">Fine Dining</h2>
+        <p class="text-lg font-light">A culinary journey for the senses</p>
+      </div>
+    </section>
+
+    <!-- Restaurant Overview -->
+    <section class="py-20 px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <h3 class="font-display text-4xl mb-6">The Grand Restaurant</h3>
+          <p class="text-gray-600 mb-4">
+            Step into a world of culinary excellence at The Grand Restaurant.
+            Our executive chef and team craft extraordinary dishes using the
+            finest locally sourced and seasonal ingredients, blending classic
+            techniques with modern creativity.
+          </p>
+          <p class="text-gray-600 mb-6">
+            Whether you're enjoying a leisurely breakfast, a business lunch, or
+            an intimate dinner, every meal is an experience to savour.
+          </p>
+          <div class="space-y-3 text-sm text-gray-600">
+            <p>
+              <span class="text-gold font-bold">Breakfast:</span> 6:30 AM -
+              10:30 AM
+            </p>
+            <p>
+              <span class="text-gold font-bold">Lunch:</span> 12:00 PM - 3:00 PM
+            </p>
+            <p>
+              <span class="text-gold font-bold">Dinner:</span> 6:00 PM - 11:00
+              PM
+            </p>
+            <p>
+              <span class="text-gold font-bold">Dress Code:</span> Smart Casual
+            </p>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <img
+            src="https://picsum.photos/id/292/800/600"
+            class="w-full h-96 object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section class="py-20 px-6 bg-beige">
+      <div class="max-w-5xl mx-auto text-center">
+        <h3 class="font-display text-4xl mb-4">Menu Highlights</h3>
+        <p class="text-gray-600 mb-12">A taste of what awaits you</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h4 class="font-display text-xl mb-4 text-gold">Starters</h4>
+            <ul class="space-y-3 text-sm text-gray-600">
+              <li>Seared Scallops with Citrus Butter</li>
+              <li>Truffle Mushroom Soup</li>
+              <li>Tuna Tartare with Avocado</li>
+              <li>Burrata &amp; Heirloom Tomato</li>
+            </ul>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h4 class="font-display text-xl mb-4 text-gold">Mains</h4>
+            <ul class="space-y-3 text-sm text-gray-600">
+              <li>Wagyu Beef Tenderloin</li>
+              <li>Pan-Roasted Sea Bass</li>
+              <li>Lamb Rack with Herb Crust</li>
+              <li>Wild Mushroom Risotto</li>
+            </ul>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h4 class="font-display text-xl mb-4 text-gold">Desserts</h4>
+            <ul class="space-y-3 text-sm text-gray-600">
+              <li>Dark Chocolate Fondant</li>
+              <li>Creme Brulee</li>
+              <li>Mango Panna Cotta</li>
+              <li>Artisan Cheese Selection</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Bar -->
+    <section class="py-20 px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="overflow-hidden rounded-lg">
+          <img
+            src="https://picsum.photos/id/431/800/600"
+            class="w-full h-96 object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
+        <div>
+          <h3 class="font-display text-4xl mb-6">The Luxe Bar</h3>
+          <p class="text-gray-600 mb-4">
+            Unwind in style at The Luxe Bar, where our expert mixologists craft
+            signature cocktails using premium spirits and fresh ingredients.
+            From classic Old Fashioneds to innovative creations, every drink is
+            a masterpiece.
+          </p>
+          <p class="text-gray-600 mb-6">
+            Enjoy live jazz on weekends and an extensive wine list curated from
+            the world's finest vineyards.
+          </p>
+          <div class="space-y-3 text-sm text-gray-600">
+            <p>
+              <span class="text-gold font-bold">Hours:</span> 4:00 PM - 1:00 AM
+            </p>
+            <p>
+              <span class="text-gold font-bold">Happy Hour:</span> 4:00 PM -
+              7:00 PM
+            </p>
+            <p>
+              <span class="text-gold font-bold">Live Music:</span> Fri &amp;
+              Sat, 8:00 PM
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation CTA -->
+    <section class="py-20 px-6 bg-charcoal text-center">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="font-display text-4xl text-white mb-4">
+          Reserve Your Table
+        </h3>
+        <p class="text-gray-400 mb-8">
+          For reservations, special dietary requirements, or private dining
+          inquiries, please contact our restaurant team.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+          <a
+            href="/contact/"
+            class="bg-gold text-white px-10 py-4 text-sm uppercase tracking-wider hover:bg-yellow-700 transition"
+            >Make a Reservation</a
+          >
+          <a
+            href="tel:+2335551234567"
+            class="border border-gold text-gold px-10 py-4 text-sm uppercase tracking-wider hover:bg-gold hover:text-white transition"
+            >Call +233 (555) 123-4567</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-charcoal text-white py-12 px-6 text-center border-t border-gray-700"
+    >
+      <h4 class="font-display text-xl mb-2">
+        Grand <span class="text-gold">Luxe</span>
+      </h4>
+      <p class="text-gray-400 text-sm">
+        &copy; 2026 Grand Luxe Hotel. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

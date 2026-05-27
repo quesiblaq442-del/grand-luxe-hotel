@@ -11,3 +11,6 @@ def about(request):
 
 def amenities(request):
   return render(request, 'core/amenities.html')
+
+def contact(request):
+  return render(request, 'core/contact.html')
