@@ -64,27 +64,27 @@
     <!-- Booking Form -->
     <section class="pb-20 px-6">
       <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12">
-        <form>
+        <form method="POST" action="/booking/">
+          {% csrf_token %}
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <!-- Check-in -->
             <div>
               <label
                 class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-                >Check-in Date</label
+                >Check_in</label
               >
-              <input
-                type="date"
-                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
+              <input type="date" name="check_in" required
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
               />
             </div>
             <!-- Check-out -->
             <div>
               <label
                 class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-                >Check-out Date</label
+                >Check_out</label
               >
               <input
-                type="date"
+                type="date" name="check_out" required
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
               />
             </div>
@@ -92,9 +92,9 @@
             <div>
               <label
                 class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-                >Guests</label
+                >guests</label
               >
-              <select
+              <select name="guests" required
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold bg-white"
               >
                 <option>1 Guest</option>
@@ -108,9 +108,9 @@
             <div>
               <label
                 class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-                >Room Type</label
+                >Room_Type</label
               >
-              <select
+              <select name="room_type" required
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold bg-white"
               >
                 <option>Deluxe Room - $299/night</option>
@@ -127,10 +127,10 @@
             <div>
               <label
                 class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-                >First Name</label
+                >First_Name</label
               >
               <input
-                type="text"
+                type="text" name="first_name" required
                 placeholder="John"
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
               />
@@ -138,10 +138,10 @@
             <div>
               <label
                 class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-                >Last Name</label
+                >Last_Name</label
               >
               <input
-                type="text"
+                type="text" name="last_name" required
                 placeholder="Doe"
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
               />
@@ -149,10 +149,10 @@
             <div>
               <label
                 class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-                >Email</label
+                >email</label
               >
               <input
-                type="email"
+                type="email" name="email" required
                 placeholder="john@example.com"
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
               />
@@ -160,10 +160,10 @@
             <div>
               <label
                 class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-                >Phone</label
+                >phone</label
               >
               <input
-                type="tel"
+                type="tel" name="phone" required
                 placeholder="+1 (555) 000-0000"
                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
               />
@@ -174,9 +174,9 @@
           <div class="mb-8">
             <label
               class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-              >Special Requests</label
+              >Special_Requests</label
             >
-            <textarea
+            <textarea name="special_requests"
               rows="4"
               placeholder="Any special requirements? (e.g., extra pillows, dietary needs, celebration arrangements)"
               class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gold"
@@ -187,11 +187,11 @@
           <div class="mb-8">
             <label
               class="block text-sm uppercase tracking-wider text-gray-600 mb-2"
-              >Promo Code (Optional)</label
+              >Promo_Code (Optional)</label
             >
             <div class="flex">
               <input
-                type="text"
+                type="text" name="promo_code"
                 placeholder="Enter promo code"
                 class="flex-1 p-3 border border-gray-300 rounded-l-lg focus:outline-none focus:border-gold"
               />
